@@ -2,6 +2,8 @@
 
 This script converts a paired-end bam file to a pairs file.
 
+# NOTE : bam2pairs is now moved to the util directory of the pairix repo. (https://github.com/4dn-dcic/pairix)
+
 
 ## Installation
 ```
@@ -11,8 +13,8 @@ git clone https://github.com/4dn-dcic/bam2pairs
 
 ## Requirements
 * samtools (https://github.com/samtools/samtools)
-* bgzip (https://github.com/hms-dbmi/pairix or https://github.com/samtools/tabix)
-* pairix (https://github.com/hms-dbmi/pairix)
+* bgzip (https://github.com/4dn-dcic/pairix or https://github.com/samtools/tabix)
+* pairix (https://github.com/4dn-dcic/pairix)
 
 
 ## Input
@@ -25,7 +27,7 @@ The output file is an upper-triangular, chromosome-pair-block-sorted, pairs file
 ```
 readID chr1 pos1 chr2 pos2 strand1 strand2
 ```
-It is bgzipped and indexed by pairix (https://github.com/hms-dbmi/pairix) on the chromosome pairs.
+It is bgzipped and indexed by pairix (https://github.com/4dn-dcic/pairix) on the chromosome pairs.
 
 
 ## Example Output
